@@ -1,4 +1,4 @@
-let frenchword = document.querySelector(".french-word"); // or '#french-word' if id
+let frenchword = document.querySelector(".french-word");
 let submitBtn = document.querySelector("#submit-btn");
 let guessWord = document.querySelector("#user-input");
 let resultMessage = document.querySelector("#result-message");
@@ -38,7 +38,6 @@ submitBtn.addEventListener("click", () => {
         resultMessage.style.color = "red";
     }
 
-    // Clear and focus the input field
     guessWord.value = "";
     guessWord.focus();
 });
